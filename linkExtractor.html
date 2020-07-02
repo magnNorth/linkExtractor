@@ -1,0 +1,39 @@
+<html>
+<head>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+   
+
+    <style>
+        .linkFinder {
+            background: #2b7ce0;
+        }
+        .atlasian_automagic pre {
+            color:#fff;
+        }
+        #keylogarea {width:600px; height:200px; display:block;}
+        #keyloginput {width:600px;  display:block;}
+        
+        </style>
+</head>
+<body>
+    <div id="app"></div>
+
+
+
+    <div class="linkFinder"></div>
+        <div class="wrapdiv">
+            <label>input</label>
+            <input type='text' id="keyloginput" value='<a href="https://docs.google.com/document/d/1Fvwrg2TNI4ptctDlGbOjtJNiKQyrhj05jAsyC4Jj544">a link</a>' />
+            <label>textarea</label>
+            <textarea id="keylogarea"><a href="https://docs.google.com/document/d/1Fvwrg2TNI4ptctDlGbOjtJNiKQyrhj05jAsyC4Jj544">a link</a></textarea>
+            <!--<span id="keylogger_embed">%__custom-contents%</span>-->
+
+            <div id="previewframe_loader"></div>
+            <div id="previewframe_embed"></div>
+            <button id="getids">Get IDs</button>
+        </div>
+    </div>
+    <script src="./linkExtractor.js"></script>
+</body>
+</html>
